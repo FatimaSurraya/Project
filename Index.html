@@ -2,9 +2,48 @@
 <html>
 <head>
 <title>Register</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
 </head>
 <body>
-    
-    
+    <h1>Register here</h1>
+    <form>
+        <div class="form-group mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Write name here" id="name" required>
+        </div>
+<br />
+        <div class="form-group mb-3">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="Write email here" id="email" required>
+        </div>
+        <br />
+        <div class="form-group mb-3">
+            <label>Number</label>
+            <input type="text" class="form-control" placeholder="Write number here" id="number" required>
+        </div>
+        <br />
+        <div class="form-group mb-3">
+            <label>Country</label>
+            
+            <div class="rbt-modern-select bg-transparent height-45">
+                <select class="form-control" id="Country">
+                    <option value="">Please select Country</option>
+                    <option value="CountryP">Pakistan</option>
+                    <option value="CountryI">India</option>
+                    <option value="CountryA">America</option>
+           
+           
+                </select>
+        </div>
+        <br />
+        <button class="form-control btn btn-primary Submit px-3">Submit</button>
+    </form>
 </body>
 </html>
