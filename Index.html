@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="nofollow" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    
+    <style>
 
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-<body>
-    <h1>Register here</h1>
-    <form>
-        <div class="form-group mb-3">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Write name here" id="name" required>
-        </div>
-<br />
-        <div class="form-group mb-3">
-            <label>Email</label>
-            <input type="text" class="form-control" placeholder="Write email here" id="email" required>
-        </div>
-        <br />
-        <div class="form-group mb-3">
-            <label>Number</label>
-            <input type="text" class="form-control" placeholder="Write number here" id="number" required>
-        </div>
-        <br />
-        <div class="form-group mb-3">
-            <label>Country</label>
+<body background="background.jpg">
+    <div class="container form-container">
+        <h1 class="mb-4 text-center">Register </h1>
+        <form>
+            <div class="form-group mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Write name here" id="name" required>
+            </div>
             
-            <div class="rbt-modern-select bg-transparent height-45">
-                <select class="form-control" id="Country">
+            <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Write email here" id="email" required>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label for="number">Number</label>
+                <input type="text" class="form-control" placeholder="Write number here" id="number" required>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" required>
                     <option value="">Please select Country</option>
                     <option value="CountryP">Pakistan</option>
                     <option value="CountryI">India</option>
                     <option value="CountryA">America</option>
-           
-           
                 </select>
-        </div>
-        <br />
-        <button class="form-control btn btn-primary Submit px-3">Submit</button>
-    </form>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIqJZY4I7VLp9HC0o6FY4n7gGi3Pm7L/4l6vpEew+JfQTH3dTf4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnK8rZOllOXWgMe/nJ6BktcbmZ9X7lA" crossorigin="anonymous"></script>
 </body>
 </html>
