@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="nofollow" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
-
         .form-container {
             background: rgba(255, 255, 255, 0.8);
             padding: 20px;
@@ -22,20 +21,21 @@
 <body background="background.jpg">
     <div class="container form-container">
         <h1 class="mb-4 text-center">Register </h1>
+        <p>HIDE ME</p>
         <form>
             <div class="form-group mb-3">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" placeholder="Write name here" id="name" required>
+                <input type="text" class="form-control" placeholder="Write name here" id="test" required>
             </div>
             
             <div class="form-group mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" placeholder="Write email here" id="email" required>
+                <input type="email" class="form-control" placeholder="Write email here" id="test required>
             </div>
             
             <div class="form-group mb-3">
                 <label for="number">Number</label>
-                <input type="text" class="form-control" placeholder="Write number here" id="number" required>
+                <input type="text" class="form-control" placeholder="Write number here" id="test required>
             </div>
             
             <div class="form-group mb-3">
@@ -48,12 +48,25 @@
                 </select>
             </div>
             
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block" id="p1">Register</button>
         </form>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+P+0VBklp2jU5D44xzWxboE5VQ2M7v0SwvIbxKjzZr1z3df0c3UP/hYt4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIqJZY4I7VLp9HC0o6FY4n7gGi3Pm7L/4l6vpEew+JfQTH3dTf4" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnK8rZOllOXWgMe/nJ6BktcbmZ9X7lA" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });
+        $("p").dblclick(function(){
+    $(this).hide();
+  });
+  $("#p1").click(function(){
+    alert("Congratulations!");
+  });
+    </script>
 </body>
 </html>
